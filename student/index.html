@@ -16,7 +16,7 @@
             <a id="home">Home</a>
             <a id="cars">Cars</a>
             <a id="manufacturerNames">Manufacturer names</a>
-            <a id="manufacturers">manufacturers</a>
+            <a id="manufacturers">Manufacturers</a>
 			<a <span style="float:right;" a onclick="openNav()">+</span></a>
 			
 	</div>
@@ -28,33 +28,47 @@
 </div>
 			
 
-        
-    </div>
-
 <div id="index">
-	
+
+<h1 align="center">Welcome to my dealership!</h1>
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="images/img1.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <div class="text">Car 1</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="images/img2.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <div class="text">Car 2</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="images/img3.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <div class="text">Car 3</div>
 </div>
 
 </div>
-<br>
+
+<h3 class="one"> Feel free to browse through our collection and contact me if you have any questions or anything catches your attention!</h3>
+
+<div class="card">
+  <img src="images/rick.jpg" alt="Me" style="width:100%">
+  <h1>Erdei Botond</h1>
+  <p class="title">Student</p>
+  <p>University of Miskolc</p>
+  <p>botond.erdei777@gmail.com</p>
+</div>
+
+</div>
+
+<div id="main">
+</div>
+	
 
 <div style="text-align:center">
   <span class="dot"></span> 
@@ -64,8 +78,24 @@
 
 <div class="clearfix"></div>
 	
+	
+<form id="addCar">
+    <label>Name</label><input type="text" name="name" placeholder="Car Name" required> <br/>
+    <label>Consumption</label><input type="text" name="consumption" placeholder="Consumption" required> <br/>
+    <label>Color</label><input type="text" name="color" placeholder="Color" required> <br/>
+    <label>Manufacturer</label><input type="text" name="manufacturer" placeholder="Car Manufacturer" required> <br/>
+    <label>Available</label><input type="text" name="available" placeholder="Available Number" required> <br/>
+    <label>Year</label><input type="text" name="year" placeholder="Year" required> <br/>
+    <label>Horsepower</label><input type="text" name="horsepower" placeholder="Horsepower" required> <br/>
+    <button type="button" onclick="addNewCar()">Submit</button>
+</form>
 
-</div>
+<form id="addManufacturer">
+    <label>Name</label><input type="text" name="name" placeholder="Manufacturer Name" required> <br/>
+    <label>Country</label><input type="text" name="country" placeholder="Manufacturer Country" required> <br/>
+    <label>Founded</label><input type="text" name="founded" placeholder="Founded" required> <br/>
+    <button type="button" onclick="addNewManufacturer()">Submit</button>
+</form>
 
 
 <script src="js/index.js"></script>

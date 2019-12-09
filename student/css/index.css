@@ -5,24 +5,57 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
   background: white;
 }
 
-.header h1 {
-  font-size: 50px;
+
+input {
+  height: 40px;
+  width: 100%;
+  font-size: 20px;
 }
+
+.listing-card {
+	padding: 15px 10%;
+	float: center;
+	background: white;
+	border: 3px solid red;
+	border-radius: 12px;
+	text-align: center;
+}
+
+.card {
+border: 300px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: auto;
+text-align: center;
+background: white;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
 
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #910;
 }
 
 /* Style the topnav links */
@@ -95,45 +128,6 @@ div.desc {
   clear: both;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -141,7 +135,7 @@ li.dropdown {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #910;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -151,7 +145,7 @@ li.dropdown {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
@@ -180,27 +174,11 @@ li.dropdown {
   font-size: 20px;
 }
 
-input {
-  height: 40px;
-  width: 100%;
-  font-size: 20px;
+h3.one {
+  border-style: solid;
+  border-color: red;
 }
 
-.submit {
-  font-size: 20px;
-    width: 100%;
-    background: lightgreen;
-    /* margin: 20px 20px 20px 0px; */
-    height: 40px;
-}
-
-.cancel {
-  font-size: 20px;
-    width: 100%;
-    background: darkred;
-    /* margin: 20px 20px 20px 0px; */
-    height: 40px;
-}
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -209,8 +187,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  max-height: 1000px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
 }
@@ -235,16 +212,6 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
 
 .active {
   background-color: #717171;
