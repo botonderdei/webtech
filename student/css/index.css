@@ -16,6 +16,10 @@ input {
 }
 
 .listing-card {
+
+	margin: auto;
+	width: 50%;
+	box-sizing: border-box;
 	padding: 15px 10%;
 	float: center;
 	background: white;
